@@ -5,8 +5,6 @@ php sdk for [腾讯云智能优图服务](http://www.qcloud.com/product/fr.html)
 ## 安装（直接下载源码集成）
 
 
-从github下载源码装入到您的程序中，并加载include.php
-
 ## 名词
 
 	- `AppId` 平台添加应用后分配的AppId
@@ -19,8 +17,7 @@ php sdk for [腾讯云智能优图服务](http://www.qcloud.com/product/fr.html)
 ## 使用示例
 
 ##### 引入SDK  
-```
-require('./include.php');     
+```   
 use TencentYoutuyun\Youtu;    
 use TencentYoutuyun\Conf;      
 use TencentYoutuyun\Auth;     
@@ -70,11 +67,11 @@ var_dump($uploadRet);
 - 返回值： 签名
 
 - 其它
-	
+
 	- `auth.AUTH_PARAMS_ERROR` 参数错误常量（-1）
 	- `auth.AUTH_SECRET_ID_KEY_ERROR` 密钥ID或者密钥KEY错误常量（-2）
 
-     
+
 ***      
 #####  Api分为开放平台API和核身API，**核身API访问权限需要联系商务开通**；开放平台API访问域名为https://api.youtu.qq.com/， 核身API访问域名为https://vip-api.youtu.qq.com/
 ***
@@ -293,14 +290,14 @@ var_dump($uploadRet);
 		- `$group_id` 组
 
 * `YouTu::getfaceIds($person_id)`
-	
+
 	获取一个组person中所有face列表
 
 	- 参数
 		- `$person_id` 个体Person
 
 * `YouTu::getfaceinfo($face_id)`
-	
+
 	获取一个face的相关特征信息
 
 	- 参数
@@ -319,7 +316,7 @@ var_dump($uploadRet);
 
 * `YouTu::fooddetect($image_path)`
 * `YouTu::fooddetecturl($url)`
-	
+
 	识别一个图像是否为美食图像
 
 	- 参数
@@ -389,4 +386,3 @@ var_dump($uploadRet);
 ####更多详情和文档说明参见
 * [腾讯云智能优图服务](http://www.qcloud.com/product/fr.html)
 * [腾讯优图开放平台](http://open.youtu.qq.com)
-
