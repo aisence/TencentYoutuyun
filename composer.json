@@ -6,11 +6,15 @@
             "email": "xcode4@qq.com"
         }
     ],
-    "require": {},
-"minimum-stability": "stable",
- "autoload": {
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php":">=5.3"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
         "psr-4": {
             "TencentYoutuyun\\": "TencentYoutuyun"
         }
-    }   
+    }
 }
