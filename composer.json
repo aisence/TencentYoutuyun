@@ -1,0 +1,15 @@
+{
+    "name": "dongmingcui/tencent-youtuyun",
+    "authors": [
+        {
+            "name": "DongMing.Cui",
+            "email": "xcode4@qq.com"
+        }
+    ],
+    "require": {},
+ "autoload": {
+        "psr-4": {
+            "TencentYoutuyun\\": "TencentYoutuyun"
+        }
+    }   
+}
